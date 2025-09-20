@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Rätsel 1</title>
+  <style>body{font-family:Arial;padding:2em}.hidden{display:none}</style>
+</head>
+<body>
+  <h1>Rätsel 1</h1>
+  <p>Eine E-Lokomotive fährt nach Norden. Der Wind kommt von Osten. In welche Richtung weht der Rauch?</p>
+  <input id="answer" placeholder="Antwort eingeben">
+  <button onclick="checkAnswer()">Prüfen</button>
+  <div id="result" class="hidden">
+    <h2>Richtig 🎉</h2>
+    <p>Aufgabe: Findet ein Schild oder Haus mit einem Namen und macht ein Foto.</p>
+    <p>Nächster Stopp: <b>53.65250, 9.82150</b></p>
+    <a href="raetsel2.html">➡️ Weiter zu Rätsel 2</a>
+  </div>
+  <div id="wrong" class="hidden" style="color:red">Falsch – probiert es nochmal!</div>
+  <script>
+    function checkAnswer(){
+      const a=document.getElementById("answer").value.trim().toLowerCase();
+      if(a.includes("gar")||a.includes("nicht")){result.classList.remove("hidden");wrong.classList.add("hidden");}
+      else{wrong.classList.remove("hidden");}
+    }
+  </script>
+</body>
+</html>
