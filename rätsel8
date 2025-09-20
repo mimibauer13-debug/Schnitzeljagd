@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><title>Rätsel 8</title>
+<style>body{font-family:Arial;padding:2em}.hidden{display:none}</style></head>
+<body>
+  <h1>Rätsel 8</h1>
+  <p>Was kannst du brechen, ohne es anzufassen?</p>
+  <input id="answer" placeholder="Antwort eingeben">
+  <button onclick="checkAnswer()">Prüfen</button>
+  <div id="result" class="hidden">
+    <h2>Richtig 🎉</h2>
+    <p>Aufgabe: Jeder gibt ein harmloses Versprechen ab – und haltet es 😉</p>
+    <p><b>Finale:</b> Ziel Krupunder See – dort findet ihr den Schatz!</p>
+  </div>
+  <div id="wrong" class="hidden" style="color:red">Tipp: man gibt es mit Worten…</div>
+  <script>
+    function checkAnswer(){
+      const a=document.getElementById("answer").value.trim().toLowerCase();
+      if(a.includes("versprechen")){result.classList.remove("hidden");wrong.classList.add("hidden");}
+      else{wrong.classList.remove("hidden");}
+    }
+  </script>
+</body>
+</html>
