@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><title>Rätsel 6</title>
+<style>body{font-family:Arial;padding:2em}.hidden{display:none}</style></head>
+<body>
+  <h1>Rätsel 6</h1>
+  <p>Ich bin immer hungrig. Wenn ich esse werde ich größer. Wenn ich trinke, sterbe ich. Was bin ich?</p>
+  <input id="answer" placeholder="Antwort eingeben">
+  <button onclick="checkAnswer()">Prüfen</button>
+  <div id="result" class="hidden">
+    <h2>Richtig 🎉</h2>
+    <p>Aufgabe: Malt oder zeichnet eine Flamme als Symbol.</p>
+    <p>Nächster Stopp: <b>53.65100, 9.83300</b></p>
+    <a href="raetsel7.html">➡️ Weiter zu Rätsel 7</a>
+  </div>
+  <div id="wrong" class="hidden" style="color:red">Es wärmt, aber Wasser löscht es…</div>
+  <script>
+    function checkAnswer(){
+      const a=document.getElementById("answer").value.trim().toLowerCase();
+      if(a.includes("feuer")){result.classList.remove("hidden");wrong.classList.add("hidden");}
+      else{wrong.classList.remove("hidden");}
+    }
+  </script>
+</body>
+</html>
