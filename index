@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Schnitzeljagd Start</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2em; }
+  </style>
+</head>
+<body>
+  <h1>Willkommen zur Schnitzeljagd 🎉</h1>
+  <p>Hier beginnt eure Tour. Löst jedes Rätsel und gebt die richtige Antwort ein, 
+     dann erhaltet ihr die Aufgabe und die Koordinaten zum nächsten Stopp.</p>
+  <p>Startpunkt: <b>Oberer Ehmschen, Rellingen</b></p>
+  <a href="raetsel1.html">➡️ Los geht’s mit Rätsel 1</a>
+</body>
+</html>
