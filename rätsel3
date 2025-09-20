@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><title>Rätsel 3</title>
+<style>body{font-family:Arial;padding:2em}.hidden{display:none}</style></head>
+<body>
+  <h1>Rätsel 3</h1>
+  <p>Was läuft auf 4 Beinen, wenn es klein ist, auf 2 wenn es erwachsen ist und auf 3 wenn es alt ist?</p>
+  <input id="answer" placeholder="Antwort eingeben">
+  <button onclick="checkAnswer()">Prüfen</button>
+  <div id="result" class="hidden">
+    <h2>Richtig 🎉</h2>
+    <p>Aufgabe: Zählt die Stufen bei der Kirche oder macht ein Gruppenfoto dort.</p>
+    <p>Nächster Stopp: <b>53.65290, 9.82960</b></p>
+    <a href="raetsel4.html">➡️ Weiter zu Rätsel 4</a>
+  </div>
+  <div id="wrong" class="hidden" style="color:red">Denkt an das berühmte Rätsel von Sphinx und Ödipus!</div>
+  <script>
+    function checkAnswer(){
+      const a=document.getElementById("answer").value.trim().toLowerCase();
+      if(a.includes("mensch")){result.classList.remove("hidden");wrong.classList.add("hidden");}
+      else{wrong.classList.remove("hidden");}
+    }
+  </script>
+</body>
+</html>
