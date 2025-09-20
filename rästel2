@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><title>Rätsel 2</title>
+<style>body{font-family:Arial;padding:2em}.hidden{display:none}</style></head>
+<body>
+  <h1>Rätsel 2</h1>
+  <p>Welches Wort liest man Rückwärts und Vorwärts gleich?</p>
+  <input id="answer" placeholder="Antwort eingeben">
+  <button onclick="checkAnswer()">Prüfen</button>
+  <div id="result" class="hidden">
+    <h2>Richtig 🎉</h2>
+    <p>Aufgabe: Findet ein Straßenschild oder einen Namen mit mindestens 4 Buchstaben und lest ihn rückwärts vor.</p>
+    <p>Nächster Stopp: <b>53.65318, 9.82949</b></p>
+    <a href="raetsel3.html">➡️ Weiter zu Rätsel 3</a>
+  </div>
+  <div id="wrong" class="hidden" style="color:red">Nein, denkt an kurze Vornamen 😉</div>
+  <script>
+    function checkAnswer(){
+      const a=document.getElementById("answer").value.trim().toLowerCase();
+      if(a=="otto"||a=="anna"){result.classList.remove("hidden");wrong.classList.add("hidden");}
+      else{wrong.classList.remove("hidden");}
+    }
+  </script>
+</body>
+</html>
