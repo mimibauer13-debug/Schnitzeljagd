@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><title>Rätsel 4</title>
+<style>body{font-family:Arial;padding:2em}.hidden{display:none}</style></head>
+<body>
+  <h1>Rätsel 4</h1>
+  <p>Je mehr du von mir nimmst, desto größer werde ich. Was bin ich?</p>
+  <input id="answer" placeholder="Antwort eingeben">
+  <button onclick="checkAnswer()">Prüfen</button>
+  <div id="result" class="hidden">
+    <h2>Richtig 🎉</h2>
+    <p>Aufgabe: Sucht die Rathaus-Uhr oder ein Schild und notiert die Uhrzeit.</p>
+    <p>Nächster Stopp: <b>53.65180, 9.82980</b></p>
+    <a href="raetsel5.html">➡️ Weiter zu Rätsel 5</a>
+  </div>
+  <div id="wrong" class="hidden" style="color:red">Tipp: Man fällt hinein…</div>
+  <script>
+    function checkAnswer(){
+      const a=document.getElementById("answer").value.trim().toLowerCase();
+      if(a.includes("loch")){result.classList.remove("hidden");wrong.classList.add("hidden");}
+      else{wrong.classList.remove("hidden");}
+    }
+  </script>
+</body>
+</html>
